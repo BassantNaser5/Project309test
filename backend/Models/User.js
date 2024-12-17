@@ -33,6 +33,7 @@ userSchema.methods.genAuthToken = function () {
     return token;
 };
 
+
 userSchema.methods.checkPassword = function(password) {
     return bcrypt.compare(password, this.password)
 }
